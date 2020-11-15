@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Daniel Medina</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Profile card component</title>
+    <link rel="stylesheet" href="./css/cp.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-content">
+        <div class="card-cover">
+          <img
+            class="cover-picture"
+            src="./images/bg-pattern-card.svg"
+            alt="card-cover"
+          />
+        </div>
+        <div class="card-profile-picture">
+          <img
+            class="profile-picture"
+            src="./images/image-victor.jpg"
+            alt="profile-picture"
+          />
+        </div>
+        <div class="card-info">
+          <h2>Victor Crest <span class="age">26</span></h2>
+          <span>London</span>
+        </div>
+        <hr />
+        <div class="card-metrics">
+          <div class="socials">
+            <h2>80K</h2>
+            <span class="metrics-component">Followers</span>
+          </div>
+          <div class="socials">
+            <h2>803K</h2>
+            <span class="metrics-component">Likes</span>
+          </div>
+          <div class="socials">
+            <h2>1.4K</h2>
+            <span class="metrics-component">Photos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://dannermm.com">Daniel Medina</a>.
+    </div>
+  </body>
 </html>
